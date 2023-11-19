@@ -1,0 +1,142 @@
+.login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login .container {
+  width: 600px;
+  height: 500px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1200px) {
+  .login .container {
+    width: calc(300px + 300 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .login .container {
+    height: calc(350px + 150 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .login .container {
+    padding-top: calc(10px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .login .container {
+    padding-bottom: calc(10px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.login .container .login__title {
+  color: var(--text-color);
+  font-size: calc(24px + 8 * ((100vw - 320px) / 1600));
+  font-weight: 700;
+}
+.login .container .login__email, .login .container .login__password {
+  color: var(--text-color);
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+  padding: 8px;
+}
+@media (max-width: 1200px) {
+  .login .container .login__email, .login .container .login__password {
+    padding: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.login .container .login__email img, .login .container .login__password img {
+  color: white;
+  width: 100%;
+  max-width: 30px;
+}
+.login .container .login__email input, .login .container .login__password input {
+  width: 100%;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--text-color);
+  margin-left: 8px;
+}
+@media (max-width: 1200px) {
+  .login .container .login__email input, .login .container .login__password input {
+    margin-left: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.login .container .login__email ::placeholder, .login .container .login__password ::placeholder {
+  color: var(--text-color);
+}
+.login .container .login__email img, .login .container .login__password img {
+  width: fit-content;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+@media (max-width: 1200px) {
+  .login .container .login__email img, .login .container .login__password img {
+    margin-right: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .login .container .login__email img, .login .container .login__password img {
+    margin-left: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.login .container .login__subtitle {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .login .container .login__subtitle {
+    flex-direction: column;
+  }
+}
+.login .container .login__subtitle .login__forgot {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+  color: var(--text-color);
+}
+.login .container .login__checkbox input, .login .container .login__show input {
+  margin-right: 8px;
+}
+@media (max-width: 1200px) {
+  .login .container .login__checkbox input, .login .container .login__show input {
+    margin-right: calc(0px + 8 * ((100vw - 320px) / 880));
+  }
+}
+.login .container .login__checkbox label, .login .container .login__show label {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+  color: var(--text-color);
+}
+.login .container .login__button {
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 40px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+}
+.login .container .login__button button {
+  width: 100%;
+}
+.login .container .login__register {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  color: var(--text-color);
+}
+.login .container .login__register span {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=LoginForm.css.map */
