@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ylab-project/static/css/main.4699966e.css",
-    "main.js": "/ylab-project/static/js/main.5aebe0db.js",
+    "main.js": "/ylab-project/static/js/main.70cd0899.js",
     "static/media/background.jpg": "/ylab-project/static/media/background.cbbbd2dca58ea9e26f81.jpg",
     "index.html": "/ylab-project/index.html",
     "main.4699966e.css.map": "/ylab-project/static/css/main.4699966e.css.map",
-    "main.5aebe0db.js.map": "/ylab-project/static/js/main.5aebe0db.js.map"
+    "main.70cd0899.js.map": "/ylab-project/static/js/main.70cd0899.js.map"
   },
   "entrypoints": [
     "static/css/main.4699966e.css",
-    "static/js/main.5aebe0db.js"
+    "static/js/main.70cd0899.js"
   ]
 }
