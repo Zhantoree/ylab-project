@@ -108,6 +108,12 @@
 .login .container .login__subtitle .login__forgot {
   font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
   color: var(--text-color);
+  margin-top: 0px;
+}
+@media (max-width: 1200px) {
+  .login .container .login__subtitle .login__forgot {
+    margin-top: calc(15px + -15 * ((100vw - 320px) / 880));
+  }
 }
 .login .container .login__checkbox input, .login .container .login__show input {
   margin-right: 8px;

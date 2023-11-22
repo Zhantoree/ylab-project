@@ -9,6 +9,17 @@ const LoginForm = () => {
     const [email, setEmail] = useState<string>("")
     const [password, setPassword] = useState<string>("")
     const [showPass, setShowPass] = useState<boolean>(false)
+
+    const submitOnServer = () => {
+        fetch('https://server/info', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+        }).then(() => alert('Submitted'))
+    }
+
     return (
         <div className="login">
             <div className="container">
@@ -38,7 +49,7 @@ const LoginForm = () => {
                         Forgot Password?
                     </div>
                 </div>
-                <button className="login__button">
+                <button className="login__button" onClick={() => submitOnServer()}>
                     Login
                 </button>
                 <div className="login__register">
